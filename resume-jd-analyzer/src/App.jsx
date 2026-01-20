@@ -18,7 +18,6 @@ function App() {
 
   const [experienceLevel, setExperienceLevel] = useState("junior");
   const [roleType, setRoleType] = useState("backend");
-  const [industry, setIndustry] = useState("saas");
   const [resumeSource, setResumeSource] = useState("professional");
 
   const [loading, setLoading] = useState(false);
@@ -36,7 +35,6 @@ function App() {
         jdFile,
         experienceLevel,
         roleType,
-        industry,
         resumeSource
       });
       setResult(data);
@@ -89,18 +87,6 @@ function App() {
                 <option value="backend">Backend Engineer</option>
                 <option value="frontend">Frontend Engineer</option>
                 <option value="fullstack">Full-Stack Engineer</option>
-              </select>
-            </label>
-
-            <label>
-              Industry
-              <select value={industry} onChange={(e) => setIndustry(e.target.value)}>
-                <option value="saas">General SaaS</option>
-                <option value="fintech">Fintech</option>
-                <option value="ecommerce">E-commerce</option>
-                <option value="healthcare">Healthcare</option>
-                <option value="enterprise">Enterprise / B2B</option>
-                <option value="startup">Startup</option>
               </select>
             </label>
 
