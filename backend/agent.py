@@ -7,7 +7,8 @@ from settings import OPENROUTER_API_KEY
 
 logger = logging.getLogger(__name__)
 
-MAX_CHARS = 8000  # hard cap to reduce token / JSON failures
+MAX_CHARS = 6000
+# hard cap to reduce token / JSON failures
 
 
 class ResumeAnalysisAgent:
