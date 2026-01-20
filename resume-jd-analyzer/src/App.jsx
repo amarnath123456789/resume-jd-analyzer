@@ -89,9 +89,6 @@ function App() {
                 <option value="backend">Backend Engineer</option>
                 <option value="frontend">Frontend Engineer</option>
                 <option value="fullstack">Full-Stack Engineer</option>
-                <option value="ml">ML Engineer</option>
-                <option value="data">Data Engineer</option>
-                <option value="devops">DevOps Engineer</option>
               </select>
             </label>
 
