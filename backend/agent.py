@@ -156,6 +156,7 @@ CONTEXT:
             ],
             "temperature": 0.1,
             "max_tokens": 2000,
+            "response_format": { "type": "json_object" }
         }
 
         async with httpx.AsyncClient(timeout=40) as client:
