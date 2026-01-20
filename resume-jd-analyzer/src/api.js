@@ -47,7 +47,6 @@ export async function analyzeResume({
   jdFile,
   experienceLevel,
   roleType,
-  industry,
   resumeSource,
 }) {
   if (!resumeFile) {
@@ -62,7 +61,6 @@ export async function analyzeResume({
   formData.append("jd_pdf", jdFile);
   formData.append("experience_level", experienceLevel || "junior");
   formData.append("role_type", roleType || "backend");
-  formData.append("industry", industry || "saas");
   formData.append("resume_source", resumeSource || "professional");
 
   try {
