@@ -23,7 +23,6 @@ async def analyze_resume(
 
     experience_level: str = Form(...),
     role_type: str = Form(...),
-    industry: str = Form(...),
     resume_source: str = Form(...)
 ):
     # 1️⃣ Validate file types
@@ -46,7 +45,7 @@ async def analyze_resume(
     context = {
         "experience_level": experience_level,
         "role_type": role_type,
-        "industry": industry,
+        "industry": None,
         "resume_source": resume_source,
     }
 
